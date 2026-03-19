@@ -1,24 +1,60 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Admin Dashboard</title>
-<link rel="stylesheet" href="style.css">
+<title>EI Solutions Admin Dashboard</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+margin-top:60px;
+background:#f5f5f5;
+}
+
+.box{
+background:white;
+width:400px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+button{
+padding:10px 20px;
+margin:10px;
+border:none;
+background:#0b3d91;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#062b66;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<div class="card">
+<div class="box">
 
 <h2>Admin Dashboard</h2>
 
 <button onclick="viewFranchise()">View Franchise Data</button>
 
+<button onclick="approveFranchise()">Approve Franchise</button>
+
+<h3 id="status"></h3>
+
 <div id="data"></div>
 
 </div>
 
-<script src="script.js"></script>
+<script src="../js/admin.js"></script>
+
 </body>
 </html>
