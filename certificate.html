@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Certificate Generator</title>
+<title>Franchise Agreement</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,15 +11,17 @@
 
 <div class="card">
 
-<h2>Generate Certificate</h2>
+<h2>Franchise Agreement</h2>
 
-<input id="cname" placeholder="Franchise Name">
-<input id="cid" placeholder="Certificate ID">
+<p>
+I agree to follow EI Solutions franchise rules and policies.
+</p>
 
-<button onclick="generateCertificate()">Generate</button>
-<button onclick="downloadCertificate()">Download</button>
+<input type="checkbox" id="agree"> I Agree
 
-<canvas id="canvas" width="1000" height="600"></canvas>
+<br><br>
+
+<button onclick="agree()">Continue</button>
 
 </div>
 
